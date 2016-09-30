@@ -5,11 +5,11 @@
 class Xscreenshot < Formula
   desc "A reincarnation of the screenshot gem for fastlane that works for Xamarin.Forms apps"
   homepage "https://github.com/ecomerc/xscreenshot"
-  url "https://github.com/ecomerc/xscreenshot/archive/v0.9.3.tar.gz"
-  version "0.9.3"
+  url "https://github.com/ecomerc/xscreenshot/archive/v0.9.4.tar.gz"
+  version "0.9.4"
   sha256 ""
 
-  # depends_on "cmake" => :build
+  depends_on "coreutils"
   # we require xamarin 
 
   def install
@@ -17,7 +17,7 @@ class Xscreenshot < Formula
 	system "/usr/local/bin/xbuild", "/p:Configuration=Release", "Source/xscreenshot.sln"
 	bin.install Dir["Source/bin/Release/*"]
 	bin.install Dir["Scripts/*"]
-	opt_prefix.install Dir["Fastlane/*"]
+	lib.install Dir["lib/*"]
   end
 
   test do
