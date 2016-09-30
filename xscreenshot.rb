@@ -5,8 +5,8 @@
 class Xscreenshot < Formula
   desc "A reincarnation of the screenshot gem for fastlane that works for Xamarin.Forms apps"
   homepage "https://github.com/ecomerc/xscreenshot"
-  url "https://github.com/ecomerc/xscreenshot/archive/v0.9.2.tar.gz"
-  version "0.9.2"
+  url "https://github.com/ecomerc/xscreenshot/archive/v0.9.3.tar.gz"
+  version "0.9.3"
   sha256 ""
 
   # depends_on "cmake" => :build
