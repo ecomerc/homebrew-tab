@@ -7,18 +7,18 @@ class Xscreenshot < Formula
   homepage "https://github.com/ecomerc/xscreenshot"
   url "https://github.com/ecomerc/xscreenshot/archive/v0.9.1.tar.gz"
   version "0.9.1"
-  sha256 ""
+  sha256 "91ab6b5d7d7c2fab56dcf3602b399381895215648ece57cde08a6e866e834d00"
 
   # depends_on "cmake" => :build
   # we require xamarin 
 
   def install
-	system "nuget", "restore", "Source/"
-	system "xbuild", "/p:Configuration=Release", "Source/xscreenshot.sln"
+	system "/usr/local/bin/nuget", "restore", "Source/"
+	system "/usr/local/bin/xbuild", "/p:Configuration=Release", "Source/xscreenshot.sln"
 	bin.install Dir["Source/bin/Release/*"]
   end
 
   test do
-    system "mono", "#{bin}/program", "test" 
+    system "/usr/local/bin/mono", "#{bin}/program", "test" 
   end
 end
