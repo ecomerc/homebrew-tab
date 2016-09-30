@@ -11,7 +11,6 @@ class Xscreenshot < Formula
 
   # depends_on "cmake" => :build
   # we require xamarin 
-  depends_on :x11 # if your formula requires any X11/XQuartz components
 
   def install
 	system "nuget", "restore", "Source/"
