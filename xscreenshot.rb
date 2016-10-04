@@ -18,6 +18,7 @@ class Xscreenshot < Formula
 	bin.install Dir["Source/bin/Release/*"]
 	bin.install Dir["Scripts/*"]
 	lib.install Dir["lib/*"]
+    system "/usr/local/bin/mono", "#{bin}/xscreenshot.exe", "--init" 
   end
 
   test do
