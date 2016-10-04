@@ -5,9 +5,9 @@
 class Xscreenshot < Formula
   desc "A reincarnation of the screenshot gem for fastlane that works for Xamarin.Forms apps"
   homepage "https://github.com/ecomerc/xscreenshot"
-  url "https://github.com/ecomerc/xscreenshot/archive/v0.9.22.tar.gz"
-  version "0.9.22"
-  sha256 "992d7b32aac491b5eeb5464d9c06ec3ac464835e2f0bcb62ee1a225d0151a831"
+  url "https://github.com/ecomerc/xscreenshot/archive/v0.9.23.tar.gz"
+  version "0.9.23"
+  sha256 ""
 
   depends_on "coreutils"
   # we require xamarin 
