@@ -7,7 +7,7 @@ class Xscreenshot < Formula
   homepage "https://github.com/ecomerc/xscreenshot"
   url "https://github.com/ecomerc/xscreenshot/archive/v0.9.24.tar.gz"
   version "0.9.24"
-  sha256 ""
+  sha256 "87854d6009206ca8b47316f361e23d5b2fd1543b3063aabd1b03c4a3273e38ba"
 
   depends_on "coreutils"
   # we require xamarin 
